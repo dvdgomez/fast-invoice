@@ -31,7 +31,7 @@ class InvoiceCreate(InvoiceBase):
     pass
 
 
-class Invoice(InvoiceBase)
+class Invoice(InvoiceBase):
     id: int
     invoice_items: list[InvoiceItem] = []
 

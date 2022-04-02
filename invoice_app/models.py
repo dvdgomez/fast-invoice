@@ -22,7 +22,7 @@ class InvoiceItem(Base):
     units = Column(Integer)
     description = Column(String)
     amount = Column(Numeric)
-    invoice_id = Column(Integer, ForeignKey("invoice.id"))
+    invoice_id = Column(Integer, ForeignKey("invoices.id"))
 
     invoice = relationship("Invoice", back_populates="invoice_items")
 

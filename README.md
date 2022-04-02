@@ -12,7 +12,7 @@ invoice-app
 * crud.py
   * Create, Read, Update, and Delete (CRUD) invoices and invoice items
 * main.py
-  * Main FastAPI invoice app
+  * Main FastAPI invoice app and path operations
 
 # Setup:
 
