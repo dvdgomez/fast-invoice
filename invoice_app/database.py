@@ -19,3 +19,4 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 # Used to create ORM models
 Base = declarative_base()
+
