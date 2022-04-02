@@ -43,7 +43,7 @@ def read_invoice(invoice_id: int, db: Session = Depends(get_db)):
     return invoice
 
 
-@app.post("/invoices/{invoice_id}/invoice_items", response_model=schemas.InvoiceItem)
+@app.post("/invoices/{invoice_id}/invoice_items/", response_model=schemas.InvoiceItem)
 def create_invoice_item(
     invoice_id: int, item: schemas.InvoiceItemCreate, db: Session = Depends(get_db)
 ):

@@ -11,7 +11,7 @@ class Invoice(Base):
     id = Column(Integer, primary_key=True, index=True)
     date = Column(Date)
 
-    invoice_items = relationship("InvoiceItem", back_populates="owner")
+    invoice_items = relationship("InvoiceItem", back_populates="invoice")
 
 
 # InvoiceItem Model
