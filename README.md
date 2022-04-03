@@ -60,3 +60,7 @@ http://127.0.0.1:8000/docs#/
 If SQLite was used, consider using DB Browser for SQLite
 
 Read more here: https://sqlitebrowser.org/
+
+# Testing
+
+Recommended to use pytest for testing, see more here: https://docs.pytest.org/en/7.1.x/getting-started.html#get-started
