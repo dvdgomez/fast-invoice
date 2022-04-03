@@ -26,20 +26,21 @@ Docker Install:
 * https://docs.docker.com/get-docker/
 
 Docker Build:
-* docker build --tag fast-invoice .
+* docker build -t fast-invoice .
 * If all goes well, should show in "docker images" along with the base image
-* If not, may not to run with elevated privileges
-* sudo docker build --tag fast-invoice .
+* If not, may have to run with elevated privileges
+* sudo docker build -t fast-invoice .
 
 Docker Run:
-* To run the docker image and expose the expected port 8000, run the following:
-* docker run --publish 8000:8000 fast-invoice
-* To run in detached mode
-* docker run -d -p 8000:8000 fast-invoice
+* To run the docker image and expose the expected port 80, run the following:
+* docker run -p 80:80 fast-invoice
+* To run in detached mode with a named container
+* docker run -d --name fast-invoice-ctn -p 80:80 fast-invoice
+* Don't need instructions below, simply navigate to http://127.0.0.1/docs#
 
 See requirements.txt for Python packages needed
 
-# How to run:
+# How to run (without Docker):
 
 In the root directory of this repo, run the following:
 
