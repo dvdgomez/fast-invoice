@@ -1,3 +1,7 @@
+# Author
+
+David Gomez
+
 # Overview of fast-invoice:
 
 Fast-invoice is a FastAPI web framework app that utilizes SQLAlchemy ORM.
