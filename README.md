@@ -64,3 +64,7 @@ Read more here: https://sqlitebrowser.org/
 # Testing
 
 Recommended to use pytest for testing, see more here: https://docs.pytest.org/en/7.1.x/getting-started.html#get-started
+
+# Lint
+
+PEP8 lint tool used pycodestyle, see more here: https://pypi.org/project/pycodestyle/

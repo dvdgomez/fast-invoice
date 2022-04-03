@@ -10,7 +10,7 @@ def get_invoice(db: Session, invoice_id: int):
 
 
 def get_invoice_by_date(db: Session, date: datetime.date):
-    return db.query(models.Invoice).filter(models.Invoice.date == date).first() 
+    return db.query(models.Invoice).filter(models.Invoice.date == date).first()
 
 
 def get_invoices(db: Session, offset: int = 0, limit: int = 10):
@@ -43,4 +43,3 @@ def create_invoice_item(db: Session, item: schemas.InvoiceItemCreate, invoice_id
     # refresh database instance
     db.refresh(db_invoice_item)
     return db_invoice_item
-

@@ -5,7 +5,7 @@ from . import crud, models, schemas
 from .database import SessionLocal, engine
 
 # Create database tables
-# TODO: Recommended to use Alembic to initialize database tables and 
+# TODO: Recommended to use Alembic to initialize database tables and
 # for "migrations". Read more here: https://alembic.sqlalchemy.org
 models.Base.metadata.create_all(bind=engine)
 
@@ -56,4 +56,3 @@ def read_invoice_items(offset: int = 0, limit: int = 10, db: Session = Depends(g
     if items is None:
         raise HTTPException(status_code=404, detail="No invoice items found")
     return items
-

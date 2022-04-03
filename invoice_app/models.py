@@ -25,4 +25,3 @@ class InvoiceItem(Base):
     invoice_id = Column(Integer, ForeignKey("invoices.id"))
 
     invoice = relationship("Invoice", back_populates="invoice_items")
-
